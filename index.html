@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script data-require="bootstrap@3.3.6" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    
+  </head>
+
+  <body>
+   <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="https://www.stagedhomes.com/images/SHCcoin-WebLogo_Small-Size.jpg">
+            </div>
+            <div class="col-md-6">
+                <h1>welome to my page.....!</h1></div>
+            <div class="col-md-3">
+                <h3>Swathi Patlolla</h3>
+            </div>
+        </div>
+        <form  action="display.html" class="form-horizontal"  onsubmit=" fnGetValidation()">
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="name">Name:</label>
+                <div class="col-sm-10 row" oninput="fnNameValidate()" id="nameID">
+                    <input type="name"  class="form-control " id="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="input">Amount:</label>
+                <div class="input-group" id="amtID">
+                    <span class="input-group-addon">$</span>
+                    <input type="text" class="form-control" id="text"  oninput="fnAmountValidate()">
+                    <span class="input-group-addon">.00</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="pwd">Password:</label>
+                <div class="col-sm-10 row" oninput="fnPasswordValidate()" id="pwdId">
+                    <input type="password"  class="form-control " id="pwd" size="6">
+                </div>
+            </div>
+            <div class="radio-group">
+                <label class="radio-inline col-sm-offset-2 control-label">
+                    <input type="radio" name="radiobutton" id="rdb1">savings</label>
+                <label class="radio-inline control-label">
+                    <input type="radio" name="radiobutton1" id="rdb2">current</label>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-5">
+                    <button type="submit" >Submit</button>
+                    <button type="Reset" value="Reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="JS/script.js"></script>
+  </body>
+
+</html>
